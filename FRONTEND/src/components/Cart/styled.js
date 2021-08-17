@@ -14,6 +14,7 @@ export const CartHeader =styled.div`
     height: 50px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
 `;
 
