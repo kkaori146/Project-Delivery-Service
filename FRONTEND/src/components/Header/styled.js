@@ -27,5 +27,12 @@ export const SearchInput = styled.input`
     background-position: 10px center;
     outline: 0;
     padding-left: 50px;
+    transition: all ease 0.2;
+    cursor: pointer;
+    font-size: 15px;
+
+    &: focus {
+        cursor: text;
+    }
     
 `;
