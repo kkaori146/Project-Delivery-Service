@@ -26,6 +26,9 @@ export default () => {
                         <Route exact path="/">
                             <HomeScreen />
                         </Route>
+                        <Route exact path="/orders">
+                            
+                        </Route>
                         <Route path="/tela2/:nome">
                             <Tela2Screen />
                         </Route>
