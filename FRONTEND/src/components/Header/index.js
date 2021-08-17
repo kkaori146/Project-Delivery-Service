@@ -8,15 +8,14 @@ export default ({search, onSearch}) => {
     const handleInputFocus = () => {
         setInputActive(true);
     }
+
     const handleInputBlur = () => {
         if(search === '') {
             setInputActive(false);
-        }
-
     }
+}
 
     const handleChange = (e) => {
-
         onSearch(e.target.value);
     }
 

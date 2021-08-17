@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     background-color: #136713;
@@ -33,6 +33,5 @@ export const SearchInput = styled.input`
 
     &: focus {
         cursor: text;
-    }
-    
+    }   
 `;
