@@ -5,7 +5,13 @@ export default {
         //GET /api/categories
         const res = await fetch(BASE+'/categories');
         const json= await res.json();
+        return json;
 
+    },
+    getProducts: async () => {
+        //GET / api/products ([search, page, category])
+        const res = await fetch(BASE+'/products');
+        const json= await res.json();
         return json;
 
     }
