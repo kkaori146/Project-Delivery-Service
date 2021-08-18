@@ -17,6 +17,7 @@ import Header from '../../components/Header';
 import CategoryItem from '../../components/CategoryItem';
 import ProductItem from '../../components/ProductItem';
 import Modal from '../../components/Modal';
+import ModalProduct from '../../components/ModalProduct';
 
 let searchTimer = null;
 
@@ -122,10 +123,7 @@ export default () => {
             </ProductPaginationArea>
             }
             <Modal status={modalStatus} setStatus={setModalStatus}>
-                Conteúdo
-                <div style={{backgroundColor: '#F00', width: 600, height: 400}}>
-
-                </div>
+               <ModalProduct/>
             </Modal>
         </Container>
     );

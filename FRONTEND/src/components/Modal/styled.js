@@ -18,6 +18,6 @@ export const ModalBody = styled.div`
     border-radius: 20px;
     box-shadow: 0px 0px 50px #000;
     max-height: 95vh;
-    max-width: 100vh;
+    max-width: 100vw;
     overflow: auto;
 `;
