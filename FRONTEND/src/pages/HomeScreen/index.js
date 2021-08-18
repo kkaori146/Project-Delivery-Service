@@ -27,7 +27,7 @@ export default () => {
     const [products, setProducts] = useState([]);
     const [totalPages, setTotalPages] = useState(0);
 
-    const [modalStatus, setModalStatus] = useState(false);// ELE MUDOU PARA TRUE AQUI
+    const [modalStatus, setModalStatus] = useState(true);// ELE MUDOU PARA TRUE AQUI
 
     const [activeCategory, setActiveCategory] = useState(0);
     const [activePage, setActivePage] = useState(1);
@@ -121,8 +121,11 @@ export default () => {
                 ))}
             </ProductPaginationArea>
             }
-            <Modal status={modalStatus}>
+            <Modal status={modalStatus} setStatus={setModalStatus}>
                 Conteúdo
+                <div style={{backgroundColor: '#F00', width: 600, height: 400}}>
+
+                </div>
             </Modal>
         </Container>
     );
