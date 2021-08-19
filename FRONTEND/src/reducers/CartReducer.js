@@ -1,5 +1,5 @@
 const initialState = {
-    product:[], 
+    products:[], 
     address:[],
     discount:0,
     delivery: 0
@@ -24,9 +24,10 @@ export default (state = initialState, action) => {
 
             console.log(products);
 
-            return{...state, products};
+            return {...state, products};
 
         break;
+
         /*case 'SET_TOKEN':
             return {...state, token: action.payload.token};
         break;
