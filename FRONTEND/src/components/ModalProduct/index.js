@@ -39,7 +39,7 @@ useEffect(()=> {
         setQt (qt + 1);
     }
 
-    const handleAddToCart =() => {
+    const handleAddToCart = () => {
         //juntar as informações
         // mandar tudo para o reducer
         dispatch ({
@@ -47,7 +47,7 @@ useEffect(()=> {
             payload: {data, qt}
         });
 
-        setStatus(false)//fechar o modal
+        setStatus(false);//fechar o modal
     }
 
     return(

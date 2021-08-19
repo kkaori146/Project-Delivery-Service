@@ -14,7 +14,6 @@ export default (state = initialState, action) => {
             let index = products.findIndex(item => item.id === id);
             if (index > -1) {
                 products[index].qt += action.payload.qt;
-
             } else {
                 products.push ({
                     ...action.payload.data,
@@ -27,6 +26,7 @@ export default (state = initialState, action) => {
             return {...state, products};
 
         break;
+        
 
         /*case 'SET_TOKEN':
             return {...state, token: action.payload.token};
