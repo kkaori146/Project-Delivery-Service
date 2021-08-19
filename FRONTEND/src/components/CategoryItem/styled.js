@@ -12,9 +12,22 @@ export const Container = styled.div`
     margin-right: 10px;
     cursor:pointer;
     transition: all ease 0.3s;
+
+    @media (max-width: 600px) {
+        margin-bottom: 10px;
+        width: 120px;
+        height: 50px;
+        border-radius: 4px;
+        margin-right: 7px;
+    }
 `;
 
 export const CategoryImage= styled.img`
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
+
+    @media (max-width: 600px) {
+        width: 25px;
+        height: 25px;
+    }
 `;

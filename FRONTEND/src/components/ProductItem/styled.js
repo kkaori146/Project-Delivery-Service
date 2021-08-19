@@ -9,10 +9,20 @@ export const Container = styled.div`
     align-items: center;
     color: #136713;
     cursor: pointer;
+
+    @media screen and (max-width:600px){
+        max-width:100%;
+        height: auto;
+        margin-left:5px;
+    }
 `;
 
 export const ProductPhotoArea= styled.div`
     width: 100px;
+
+    @media screen and (max-width:600px){
+        margin-right:5px;
+    }
 `;
 
 export const ProductInfoArea = styled.div`
@@ -22,7 +32,7 @@ export const ProductInfoArea = styled.div`
 `;
 
 export const ProductButtonArea = styled.div`
-
+    
 `;
 
 export const ProductPhoto = styled.img`

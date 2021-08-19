@@ -7,6 +7,10 @@ export const CartArea =styled.div`
     position: fixed;
     bottom: 0;
     right: 30px;
+
+    @media (max-width: 600px) {
+        right: 1px;
+    }
 `;
 
 export const CartHeader =styled.div`
@@ -15,7 +19,6 @@ export const CartHeader =styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
-
 `;
 
 export const CartIcon =styled.img`
@@ -23,17 +26,30 @@ export const CartIcon =styled.img`
     height: auto;
     margin-left: 10px;
     margin-right: 10px;
+
+    @media(max-width: 600px){
+        height: 13px;
+        width: 15px;
+    }
 `;
 
 export const CartText =styled.div`
 flex: 1;
 color: #FFF;
 font-size: 17px;
+
+@media(max-width: 600px) {
+    height: 30px;
+}
 `;
 
 export const CartBody =styled.div`
     display: ${props=>props.show ? 'block' : 'none'};
     color: #FFF;
+
+    @media(max-width: 600px) {
+        height: 136px;
+    }
 `;
 
 export const ProductsArea = styled.div``;
@@ -52,6 +68,10 @@ export const ProductPhoto = styled.img`
 export const ProductInfoArea = styled.div`
     flex: 1;
     margin-left: 10px;
+
+    @media(max-width: 600px) {
+        height: 20px;
+    }
 `;
 
 export const ProductName = styled.div`

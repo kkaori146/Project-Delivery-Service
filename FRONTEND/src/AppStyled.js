@@ -14,6 +14,10 @@ background-color: #136713;
 width: 80px;
 flex-direction: column;
 
+@media screen and (max-width: 600px) {
+    width: 55px;
+}
+
 `;
 
 export const PageBody = styled.div`
